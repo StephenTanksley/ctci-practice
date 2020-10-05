@@ -21,4 +21,21 @@
 
 
 def is_permutation(string_1, string_2):
-    pass
+
+    if string_1 == string_2:
+        print("This is the same string, not a permutation.")
+        return False
+
+    if len(string_1) != len(string_2):
+        return False
+
+    string_set = set(string_1)
+
+    for char in string_2:
+        if char not in string_set:
+            return False
+
+    return True
+
+
+print(is_permutation("rats", "rats"))
