@@ -35,4 +35,21 @@ def palindrome_permutation(string):
     counter = 0
     table = {}
 
-    pass
+    # Populate the table with the characters in the string.
+    for char in string:
+        if char not in table:
+            table[char] = 1
+        else:
+            table[char] += 1
+
+    # Check the values in the table. If the value for the character's count is odd, increase the counter by 1.
+    for _, value in table.items():
+        if value % 2 > 0:
+            counter += 1
+
+    # If the counter is greater than or equal to 2, that means that the string absolutely cannot be a palindrome because there's more than 1 character with an odd number of repetitions.
+    if counter >= 2:
+        return False
+
+    # Assuming that we make it through all of those checks and nothing returns false, we return True.
+    return True
