@@ -42,4 +42,5 @@ def is_permutation(string_1, string_2):
     return True
 
 
+w
 print(is_permutation("rats", "rats"))
