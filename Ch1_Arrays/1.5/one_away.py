@@ -10,7 +10,7 @@
         
         SUB PROBLEMS: 
             1) What if the strings are the same? We can check this at the beginning. if str_1 == str_2, return False.
-            2) What if there are 
+            2) What if the strings are not the same length? If the length of one string is more than 1 character more or less, return False.
 
 """
 
