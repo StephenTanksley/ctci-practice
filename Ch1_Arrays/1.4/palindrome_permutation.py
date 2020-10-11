@@ -56,6 +56,8 @@
 #     # Assuming that we make it through all of those checks and nothing returns false, we return True.
 #     return True
 
+# NOTE: Need to consider whitespace and punctuation when looking at these strings. I should strip out the whitespace and punctuation.
+
 
 def palindrome_permutation(string):
     string_set = set()

@@ -17,3 +17,6 @@
 
 def one_away(str_1, str_2):
     pass
+
+
+print(one_away("something", "someting"))
